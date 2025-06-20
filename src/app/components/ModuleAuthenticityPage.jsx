@@ -7,8 +7,8 @@ import "antd/dist/reset.css";
 
 // Static data for all serial numbers
 const staticData = {
-  time: "2023-04-24",
-  name: "CHSM72M(DG)/F-BH-E006",
+  time: "2024-08-16",
+  grade: "A",
   maximumPower: "552.77",
   shortCircuitCurrent: "13.78",
   maximumCurrent: "13.26",
@@ -91,7 +91,7 @@ const ModuleAuthenticityPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
                   <p><span className="font-medium text-white">Serial Number:</span> {serialNumber}</p>
                   <p><span className="font-medium text-white">Time:</span> {result.time}</p>
-                  <p><span className="font-medium text-white">Name:</span> {result.name}</p>
+                  <p><span className="font-medium text-white">Grade:</span> {result.grade}</p>
                   <p><span className="font-medium text-white">Barcode:</span> {result.barcode}</p>
                   <p><span className="font-medium text-white">Max Power (W):</span> {result.maximumPower}</p>
                   <p><span className="font-medium text-white">Short Circuit (A):</span> {result.shortCircuitCurrent}</p>

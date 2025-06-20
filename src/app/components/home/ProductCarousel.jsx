@@ -7,7 +7,7 @@ import Link from 'next/link';
 const products = [
   { image: '/images/home/img1.png', title: 'Yangtze Y8-700W Bifacial', description: 'High-efficiency panel for homes.', link: '/products/y8-700w' },
   { image: '/images/home/img2.png', title: 'Yangtze Y6-600W Monofacial', description: 'Durable for commercial use.', link: '/products/y6-600w' },
-  { image: '/images/home/img3.png', title: 'Yangtze Y5-500W Polycrystalline', description: 'Affordable utility solution.', link: '/products/y5-500w' },
+  { image: '/images/home/img3.png', title: 'Yangtze Y5-550W Polycrystalline', description: 'Affordable utility solution.', link: '/products/y5-500w' },
   { image: '/images/home/img4.png', title: 'Yangtze Y9-800W Advanced', description: 'Cutting-edge industrial tech.', link: '/products/y9-800w' },
   { image: '/images/home/img5.png', title: 'Yangtze Y7-650W Hybrid', description: 'Versatile residential option.', link: '/products/y7-650w' },
   { image: '/images/home/img6.png', title: 'Yangtze Y4-450W Basic', description: 'Cost-effective solar panel.', link: '/products/y4-450w' },
@@ -80,10 +80,10 @@ const ProductCarousel = () => {
                     <p className="text-gray-600 text-sm mb-4 flex-grow">{product.description}</p>
                   </div>
                   <Link
-                    href={product.link}
+                    href="/contact"
                     className="text-green-600 hover:text-green-700 font-medium text-sm inline-flex items-center"
                   >
-                    Learn more
+                   Contact Us
                     <span className="ml-1 transition-transform duration-300 hover:translate-x-1">
                       →
                     </span>
