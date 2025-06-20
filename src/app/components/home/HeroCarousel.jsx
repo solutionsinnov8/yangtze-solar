@@ -51,11 +51,9 @@ const HeroCarousel = () => {
       if (video) {
         if (index === currentIndex) {
           if (video.readyState >= 2) {
-            video.play().catch((e) => console.error(`Video ${videos[index].src} play error:`, e));
           } else {
             video.addEventListener('canplay', () => {
               if (index === currentIndex) {
-                video.play().catch((e) => console.error(`Video ${videos[index].src} play error:`, e));
               }
             }, { once: true });
           }
@@ -84,7 +82,6 @@ const HeroCarousel = () => {
             onEnded={handleVideoEnd}
             playsInline
             preload={index === currentIndex || index === (currentIndex + 1) % videos.length ? 'auto' : 'none'}
-            onError={(e) => console.error(`Video ${video.src} error:`, e.target.error)}
           >
             <source src={video.src} type="video/mp4" />
             Your browser does not support the video tag.
