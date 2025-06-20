@@ -151,7 +151,7 @@ const ContactUs = () => {
               <FaMapMarkerAlt className="text-[#18AD5E] text-2xl mr-4 mt-1" />
               <div>
                 <h4 className="text-lg font-semibold text-gray-800">Location</h4>
-                <p className="text-gray-600">123 Solar Street, Energy City, EC 12345</p>
+                <p className="text-gray-600">No. 238-A, Shuguang Road, Xingning District, Guangxi, China</p>
               </div>
             </div>
           </div>
