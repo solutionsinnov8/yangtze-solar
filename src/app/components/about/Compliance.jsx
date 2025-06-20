@@ -11,7 +11,7 @@ const Compliance = () => {
           <h3 className="text-xl font-medium text-green-600 mb-4">Commitment to Ethical Standards</h3>
           <div className="border-r-4 pr-2 border-green-600 mb-6">
             <p className="text-gray-600 text-base leading-relaxed">
-              As part of the CHINT Group, Yangtze Solar upholds the highest standards of compliance in its smart manufacturing and renewable energy operations. Since 2006, we have integrated robust governance, ethical practices, and adherence to international regulations into our business framework. <br />
+              As part of the CHINT Group, Guangxi Solar upholds the highest standards of compliance in its smart manufacturing and renewable energy operations. Since 2006, we have integrated robust governance, ethical practices, and adherence to international regulations into our business framework. <br />
               Our commitment ensures transparency, quality, and sustainability across global markets, with a focus on regulatory compliance, environmental responsibility, and fair trade practices. We support a diverse range of PV systems—utility-scale, commercial, industrial, and residential—while maintaining strict adherence to industry standards.
             </p>
           </div>
@@ -27,7 +27,7 @@ const Compliance = () => {
         <div className="lg:w-1/2">
           <Image
             src="/images/about/img8.jpg"
-            alt="Yangtze Solar Compliance Facility"
+            alt="Guangxi Solar Compliance Facility"
             width={700}
             height={400}
             className="object-cover rounded-lg"

@@ -13,8 +13,8 @@ const page = () => {
 
       >
         <div className="absolute inset-0 flex items-center justify-center ">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-center px-4">
-            About Yangtze Solar
+          <h1 className="text-4xl sm:texFeatured Projectst-5xl lg:text-6xl font-bold text-white text-center px-4">
+            About Guangxi Solar
           </h1>
         </div>
       </div>

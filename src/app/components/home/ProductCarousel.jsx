@@ -5,13 +5,13 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Link from 'next/link';
 
 const products = [
-  { image: '/images/home/img1.png', title: 'Yangtze Y8-700W Bifacial', description: 'High-efficiency panel for homes.', link: '/products/y8-700w' },
-  { image: '/images/home/img2.png', title: 'Yangtze Y6-600W Monofacial', description: 'Durable for commercial use.', link: '/products/y6-600w' },
-  { image: '/images/home/img3.png', title: 'Yangtze Y5-550W Polycrystalline', description: 'Affordable utility solution.', link: '/products/y5-500w' },
-  { image: '/images/home/img4.png', title: 'Yangtze Y9-800W Advanced', description: 'Cutting-edge industrial tech.', link: '/products/y9-800w' },
-  { image: '/images/home/img5.png', title: 'Yangtze Y7-650W Hybrid', description: 'Versatile residential option.', link: '/products/y7-650w' },
-  { image: '/images/home/img6.png', title: 'Yangtze Y4-450W Basic', description: 'Cost-effective solar panel.', link: '/products/y4-450w' },
-  { image: '/images/home/img7.png', title: 'Yangtze Y10-900W Elite', description: 'Premium solar technology.', link: '/products/y10-900w' },
+  { image: '/images/home/img1.png', title: 'Guangxi Y8-700W Bifacial', description: 'High-efficiency panel for homes.', link: '/products/y8-700w' },
+  { image: '/images/home/img2.png', title: 'Guangxi Y6-600W Monofacial', description: 'Durable for commercial use.', link: '/products/y6-600w' },
+  { image: '/images/home/img3.png', title: 'Guangxi Y5-550W Polycrystalline', description: 'Affordable utility solution.', link: '/products/y5-500w' },
+  { image: '/images/home/img4.png', title: 'Guangxi Y9-800W Advanced', description: 'Cutting-edge industrial tech.', link: '/products/y9-800w' },
+  { image: '/images/home/img5.png', title: 'Guangxi Y7-650W Hybrid', description: 'Versatile residential option.', link: '/products/y7-650w' },
+  { image: '/images/home/img6.png', title: 'Guangxi Y4-450W Basic', description: 'Cost-effective solar panel.', link: '/products/y4-450w' },
+  { image: '/images/home/img7.png', title: 'Guangxi Y10-900W Elite', description: 'Premium solar technology.', link: '/products/y10-900w' },
 ];
 
 const ProductCarousel = () => {
@@ -61,7 +61,7 @@ const ProductCarousel = () => {
   return (
     <div className="relative w-full bg-gray-100 py-8 font-noto-sans">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800">Yangtze Solar Panels</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800">Guangxi Solar Panels</h2>
         <p className="text-gray-600 mb-6">
           Explore our high-quality solar panels designed for residential, commercial, and industrial solutions.
         </p>

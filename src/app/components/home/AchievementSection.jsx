@@ -28,7 +28,7 @@ const AchievementSection = () => {
   return (
     <div className="w-full bg-gray-50 py-12 font-noto-sans">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-12">Yangtze Solar Achievements</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-12">Guangxi Solar Achievements</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {achievements.map((achievement, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center">

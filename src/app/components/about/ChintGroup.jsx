@@ -12,7 +12,7 @@ const ChintGroup = () => {
           <div className="border-r-4 pr-2 border-green-600 mb-6">
             <p className="text-gray-600 text-base leading-relaxed">
               CHINT Group is a global leader in intelligent electrical equipment, renewable energy, and industrial automation, with a legacy spanning over three decades. Established in China, the group has evolved into a diversified conglomerate, encompassing smart manufacturing, energy solutions, and innovative technologies. <br />
-              Through subsidiaries like Yangtze Solar, CHINT Group drives the global transition to sustainable energy, focusing on R&D, production, and distribution of high-efficiency solutions for utility-scale, commercial, industrial, and residential applications. Our commitment is to deliver cutting-edge products and services worldwide.
+              Through subsidiaries like Guangxi Solar, CHINT Group drives the global transition to sustainable energy, focusing on R&D, production, and distribution of high-efficiency solutions for utility-scale, commercial, industrial, and residential applications. Our commitment is to deliver cutting-edge products and services worldwide.
             </p>
           </div>
           <div className="flex gap-4">

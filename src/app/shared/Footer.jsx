@@ -12,12 +12,12 @@ const Footer = () => {
             <Link href="/">
               <Image
                 src="/images/white.png" // Replace with your logo path
-                alt="Yangtze Solar"
+                alt="Guangxi Solar"
                 width={250}
                 height={40}
                 className="object-contain w-[200px] md:w-[250px]"
               />
-              {/* <h2 className="text-xl font-semibold mb-4">Yangtze Solar</h2> */}
+              {/* <h2 className="text-xl font-semibold mb-4">Guangxi Solar</h2> */}
             </Link>
             <p className="text-base text-gray-300">Innovating sustainable solar energy solutions for a brighter future, we empower communities with clean, renewable power.</p>
           </div>
@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">About</h3>
             <ul className="space-y-2">
-              <li><Link href="/about/yangtze-solar" className="text-white hover:text-red-600">About Yangtze Solar</Link></li>
+              <li><Link href="/about/guangxi-solar" className="text-white hover:text-red-600">About Guangxi Solar</Link></li>
               <li><Link href="/about/smart-manufacturing" className="text-white hover:text-red-600">Smart Manufacturing</Link></li>
               <li><Link href="/about/chint-group" className="text-white hover:text-red-600">CHINT Group</Link></li>
               <li><Link href="/about/sustainability" className="text-white hover:text-red-600">Sustainability</Link></li>
@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
             <div className="mt-4">
               <p className="text-sm">Follow us on</p>
-              <Link href="https://www.linkedin.com" className="text-white hover:text-red-600 text-sm">LinkedIn @YangtzeSolar</Link>
+              <Link href="https://www.linkedin.com" className="text-white hover:text-red-600 text-sm">LinkedIn @GuangxiSolar</Link>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
               <Link href="/careers" className="text-white hover:text-red-600 text-sm ml-2">Careers</Link>
             </div>
             <p className="text-sm">
-              COPYRIGHT © 2025 Yangtze Solar Co., Ltd. ALL RIGHTS RESERVED |
+              COPYRIGHT © 2025 Guangxi Solar Co., Ltd. ALL RIGHTS RESERVED |
               <Link href="/privacy" className="text-white hover:text-red-600 ml-1">Privacy Policy</Link> |
               <Link href="/terms" className="text-white hover:text-red-600 ml-1">Terms of Use</Link>
             </p>

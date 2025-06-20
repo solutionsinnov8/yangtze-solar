@@ -42,7 +42,7 @@ const OurImpactSection = () => {
   }, []);
 
   const milestones = [
-    { year: 2006, text: 'Founded Yangtze Solar under CHINT Group' },
+    { year: 2006, text: 'Founded Guangxi Solar under CHINT Group' },
     { year: 2010, text: 'Established first international manufacturing base' },
     { year: 2015, text: 'Launched high-efficiency solar modules' },
     { year: 2020, text: 'Expanded to 140+ countries' },
@@ -53,7 +53,7 @@ const OurImpactSection = () => {
     <div className="w-full bg-gradient-to-r from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1440px] mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-800 mb-8">Our Impact</h2>
-        <p className="text-gray-600 text-lg mb-12">Discover how Yangtze Solar is shaping a sustainable future worldwide.</p>
+        <p className="text-gray-600 text-lg mb-12">Discover how Guangxi Solar is shaping a sustainable future worldwide.</p>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="w-full lg:w-1/2">
             <canvas ref={canvasRef} className="w-full h-auto border border-gray-300 rounded-lg shadow-md" />

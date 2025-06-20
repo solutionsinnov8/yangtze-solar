@@ -14,8 +14,8 @@ const Navbar = () => {
   const aboutMenu = (
     <Menu className="bg-white shadow-lg rounded-lg border border-gray-100 font-inter">
       <Menu.Item key="1">
-        <Link href="/about/yangtze-solar" className="text-gray-700 hover:text-red-600 font-inter">
-          About Yangtze Solar
+        <Link href="/about/guangxi-solar" className="text-gray-700 hover:text-red-600 font-inter">
+          About Guangxi Solar
         </Link>
       </Menu.Item>
       <Menu.Item key="2">
@@ -61,12 +61,12 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 src="/images/hor-logo.png" // Replace with your logo path
-                alt="Yangtze Solar"
+                alt="Guangxi Solar"
                 width={250}
                 height={40}
                 className="object-contain w-[200px] md:w-[250px]"
               />
-              {/* <h2 className='text-2xl !m-0 font-semibold'>Yangtze Solar</h2> */}
+              {/* <h2 className='text-2xl !m-0 font-semibold'>Guangxi Solar</h2> */}
             </Link>
           </div>
 

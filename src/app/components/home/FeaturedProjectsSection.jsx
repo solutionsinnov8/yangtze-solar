@@ -11,19 +11,19 @@ const FeaturedProjectsSection = () => {
       key: '1',
       title: 'Solar Farm Expansion',
       description: 'A 50MW solar farm project completed in 2024.',
-      image: '/images/img1.jpg',
+      image: '/images/about/img9.jpg',
     },
     {
       key: '2',
       title: 'Urban Solar Rooftops',
       description: 'Installed 200+ rooftop systems in metropolitan areas.',
-      image: '/images/img2.jpg',
+      image: '/images/about/img10.jpg',
     },
     {
       key: '3',
       title: 'Rural Energy Initiative',
       description: 'Bringing solar power to 100+ rural communities.',
-      image: '/images/img4.jpg',
+      image: '/images/about/img11.jpg',
     },
   ];
 
@@ -50,8 +50,8 @@ const FeaturedProjectsSection = () => {
               <div className="p-4">
                 <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-md mb-4 object-center" />
                 <p className="text-gray-600 text-sm mb-4">{project.description}</p>
-                <Link href={`/projects/${project.key}`} className="inline-block text-green-600 hover:text-green-700 font-medium">
-                  Learn More <span className="ml-1">→</span>
+                <Link href={`/contact`} className="inline-block text-green-600 hover:text-green-700 font-medium">
+                  Contact Us <span className="ml-1">→</span>
                 </Link>
               </div>
             </Panel>

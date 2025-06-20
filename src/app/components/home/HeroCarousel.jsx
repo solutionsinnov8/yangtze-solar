@@ -6,21 +6,21 @@ import Link from 'next/link';
 const videos = [
   {
     src: '/videos/first.mp4',
-    heading: 'Powering the Future with Yangtze Solar',
+    heading: 'Powering the Future with Guangxi Solar',
     buttonText: 'Discover More',
-    buttonLink: '/about/yangtze-solar',
+    buttonLink: '/about/guangxi-solar',
     fallbackImage: '/images/fallback1.jpg',
   },
   {
     src: '/videos/second.mp4',
-    heading: 'Sustainable Energy by Yangtze Solar',
+    heading: 'Sustainable Energy by Guangxi Solar',
     buttonText: 'Explore Our Services',
     buttonLink: '/services/module-authenticity',
     fallbackImage: '/images/fallback2.jpg',
   },
   {
     src: '/videos/third.mp4',
-    heading: 'Innovate with Yangtze Solar Technology',
+    heading: 'Innovate with Guangxi Solar Technology',
     buttonText: 'Contact Us',
     buttonLink: '/contact',
     fallbackImage: '/images/fallback3.jpg',
