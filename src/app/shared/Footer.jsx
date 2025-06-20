@@ -10,14 +10,14 @@ const Footer = () => {
           {/* First Column: Logo and Description */}
           <div>
             <Link href="/">
-              {/* <Image
-                src="/logo.png" // Replace with your logo path
+              <Image
+                src="/images/white.png" // Replace with your logo path
                 alt="Yangtze Solar"
-                width={150}
+                width={250}
                 height={40}
-                className="object-contain mb-4"
-              /> */}
-              <h2 className="text-xl font-semibold mb-4">Yangtze Solar</h2>
+                className="object-contain w-[200px] md:w-[250px]"
+              />
+              {/* <h2 className="text-xl font-semibold mb-4">Yangtze Solar</h2> */}
             </Link>
             <p className="text-base text-gray-300">Innovating sustainable solar energy solutions for a brighter future, we empower communities with clean, renewable power.</p>
           </div>
@@ -59,12 +59,12 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-4 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div>
-              <Link href="/quick-links" className="text-white hover:text-red-600 text-sm">Quick Links</Link> | 
+              <Link href="/quick-links" className="text-white hover:text-red-600 text-sm">Quick Links</Link> |
               <Link href="/careers" className="text-white hover:text-red-600 text-sm ml-2">Careers</Link>
             </div>
             <p className="text-sm">
-              COPYRIGHT © 2025 Yangtze Solar Co., Ltd. ALL RIGHTS RESERVED | 
-              <Link href="/privacy" className="text-white hover:text-red-600 ml-1">Privacy Policy</Link> | 
+              COPYRIGHT © 2025 Yangtze Solar Co., Ltd. ALL RIGHTS RESERVED |
+              <Link href="/privacy" className="text-white hover:text-red-600 ml-1">Privacy Policy</Link> |
               <Link href="/terms" className="text-white hover:text-red-600 ml-1">Terms of Use</Link>
             </p>
           </div>
