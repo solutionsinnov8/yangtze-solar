@@ -10,7 +10,7 @@ const Sustainability = () => {
           <h2 className="text-3xl font-bold mb-2">Green & Sustainable Manufacturing</h2>
           <div className="  mb-6">
             <p className="text-gray-600 text-base leading-relaxed">
-              The concept of sustainable development has been deeply rooted in the hearts of people around the world and has become a universal value consensus. As a new energy enterprise with sustainable development as its strategic orientation, Astronergy has the ability and responsibility to become the primary driving force driving the world towards a greener and low-carbon future. <br /><br />
+              The concept of sustainable development has been deeply rooted in the hearts of people around the world and has become a universal value consensus. As a new energy enterprise with sustainable development as its strategic orientation,  Yangtze Solar has the ability and responsibility to become the primary driving force driving the world towards a greener and low-carbon future. <br /><br />
               We implement low-carbon actions through the production of each PV module, practice green behavior through every employee, and guide our partners in the PV industry chain to build a sustainable ecology together. We believe, with combined efforts, we can contribute to a green, sustainable life in the near future and realize the harmonious co-existence between humans and nature.
             </p>
           </div>

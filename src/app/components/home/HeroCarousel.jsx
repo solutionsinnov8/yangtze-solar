@@ -8,7 +8,7 @@ const videos = [
     src: '/videos/first.mp4',
     heading: 'Powering the Future with Yangtze Solar',
     buttonText: 'Discover More',
-    buttonLink: '/about/astronergy',
+    buttonLink: '/about/yangtze-solar',
     fallbackImage: '/images/fallback1.jpg',
   },
   {
