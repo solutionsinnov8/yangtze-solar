@@ -46,26 +46,22 @@ const HeroCarousel = () => {
     setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
   };
 
-  useEffect(() => {
-    videoRefs.current.forEach((video, index) => {
-      if (video) {
-        if (index === currentIndex) {
-          if (video.readyState >= 2) {
-            video.play().catch((e) => console.error(`Video ${videos[index].src} play error:`, e));
-          } else {
-            video.addEventListener('canplay', () => {
-              if (index === currentIndex) {
-                video.play().catch((e) => console.error(`Video ${videos[index].src} play error:`, e));
-              }
-            }, { once: true });
-          }
-        } else {
-          video.pause();
-          video.currentTime = 0;
-        }
+useEffect(() => {
+  videoRefs.current.forEach((video, index) => {
+    if (video) {
+      if (index === currentIndex) {
+        video.load(); // Reload to ensure fresh state
+        video.play().catch((e) => {
+          console.error(`Video ${videos[index].src} error:`, e);
+          goToNext(); // Skip to next video on error
+        });
+      } else {
+        video.pause();
+        video.currentTime = 0;
       }
-    });
-  }, [currentIndex]);
+    }
+  });
+}, [currentIndex]);
 
   return (
     <div className="relative w-full h-[calc(100vh-60px)] overflow-hidden font-noto-sans">
@@ -83,8 +79,8 @@ const HeroCarousel = () => {
             loop={false}
             onEnded={handleVideoEnd}
             playsInline
-            preload={index === currentIndex || index === (currentIndex + 1) % videos.length ? 'auto' : 'none'}
-            onError={(e) => console.error(`Video ${video.src} error:`, e.target.error)}
+            // preload={index === currentIndex || index === (currentIndex + 1) % videos.length ? 'auto' : 'none'}
+            // onError={(e) => console.error(`Video ${video.src} error:`, e.target.error)}
           >
             <source src={video.src} type="video/mp4" />
             Your browser does not support the video tag.
