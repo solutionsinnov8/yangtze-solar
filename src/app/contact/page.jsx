@@ -1,6 +1,6 @@
-import Compliance from '@/app/components/about/Compliance'
-import HelpSection from '@/app/components/home/HelpSection'
 import React from 'react'
+import ContactUs from '../components/contact/ContactUs'
+import HelpSection from '../components/home/HelpSection'
 
 const page = () => {
   return (
@@ -12,11 +12,11 @@ const page = () => {
       >
         <div className="absolute inset-0 flex items-center justify-center ">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-center px-4">
-            Compliance
+            Contact Us
           </h1>
         </div>
       </div>
-      <Compliance />
+      <ContactUs />
       <HelpSection />
     </div>
   )

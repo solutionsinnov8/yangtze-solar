@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">About</h3>
             <ul className="space-y-2">
-              <li><Link href="/about/astronergy" className="text-white hover:text-red-600">About Yangtze Solar</Link></li>
+              <li><Link href="/about/yangtze-solar" className="text-white hover:text-red-600">About Yangtze Solar</Link></li>
               <li><Link href="/about/smart-manufacturing" className="text-white hover:text-red-600">Smart Manufacturing</Link></li>
               <li><Link href="/about/chint-group" className="text-white hover:text-red-600">CHINT Group</Link></li>
               <li><Link href="/about/sustainability" className="text-white hover:text-red-600">Sustainability</Link></li>
