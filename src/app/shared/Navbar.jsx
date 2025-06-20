@@ -59,14 +59,14 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              {/* <Image
-                src="/logo.png" // Replace with your logo path
+              <Image
+                src="/images/hor-logo.png" // Replace with your logo path
                 alt="Yangtze Solar"
-                width={150}
+                width={250}
                 height={40}
-                className="object-contain"
-              /> */}
-              <h2 className='text-2xl !m-0 font-semibold'>Yangtze Solar</h2>
+                className="object-contain w-[200px] md:w-[250px]"
+              />
+              {/* <h2 className='text-2xl !m-0 font-semibold'>Yangtze Solar</h2> */}
             </Link>
           </div>
 

@@ -25,13 +25,6 @@ const videos = [
     buttonLink: '/contact',
     fallbackImage: '/images/fallback3.jpg',
   },
-  // {
-  //   src: '/videos/fourth.mp4',
-  //   heading: 'Leading the Solar Revolution with Yangtze Solar',
-  //   buttonText: 'Learn About Us',
-  //   buttonLink: '/about/sustainability',
-  //   fallbackImage: '/images/fallback4.jpg',
-  // },
 ];
 
 const HeroCarousel = () => {
