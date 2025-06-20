@@ -8,7 +8,7 @@ import "antd/dist/reset.css";
 // Static data for all serial numbers
 const staticData = {
   time: "2024-08-16",
-  grade: "A",
+  grade: "A",
   maximumPower: "552.77",
   shortCircuitCurrent: "13.78",
   maximumCurrent: "13.26",
@@ -19,16 +19,18 @@ const staticData = {
 
 const ModuleAuthenticityPage = () => {
   const [serialNumber, setSerialNumber] = useState("");
+  const [searchedSerialNumber, setSearchedSerialNumber] = useState(""); // New state for searched serial number
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
   const handleSearch = () => {
     setLoading(true);
+    setSearchedSerialNumber(serialNumber); // Update searched serial number on search
     setTimeout(() => {
       if (serialNumbers.includes(serialNumber)) {
         setResult({
           ...staticData,
-          barcode: serialNumber, // Use the entered serial number
+          barcode: serialNumber,
         });
       } else {
         setResult({
@@ -89,7 +91,7 @@ const ModuleAuthenticityPage = () => {
                   Query Results
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
-                  <p><span className="font-medium text-white">Serial Number:</span> {serialNumber}</p>
+                  <p><span className="font-medium text-white">Serial Number:</span> {searchedSerialNumber}</p> {/* Use searchedSerialNumber */}
                   <p><span className="font-medium text-white">Time:</span> {result.time}</p>
                   <p><span className="font-medium text-white">Grade:</span> {result.grade}</p>
                   <p><span className="font-medium text-white">Barcode:</span> {result.barcode}</p>
