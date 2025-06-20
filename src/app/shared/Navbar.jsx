@@ -66,7 +66,7 @@ const Navbar = () => {
                 height={40}
                 className="object-contain"
               /> */}
-              <h2 className='text-2xl font-semibold'>Yangtze Solar</h2>
+              <h2 className='text-2xl !m-0 font-semibold'>Yangtze Solar</h2>
             </Link>
           </div>
 
