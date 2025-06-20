@@ -1,10 +1,12 @@
 import AboutYangtzeSolarSection from '@/app/components/about/AboutYangtzeSolarSection'
+import OurImpactSection from '@/app/components/about/OurImpactSection'
 import WhyYangtzeSolarSection from '@/app/components/about/WhyYangtzeSolarSection'
+import HelpSection from '@/app/components/home/HelpSection'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className='mt-[60px]'>
       <div
         className="w-full h-96 bg-cover bg-center relative "
         style={{ backgroundImage: "url('/images/about/img2.jpg')", opacity: "0.6" }}
@@ -18,6 +20,8 @@ const page = () => {
       </div>
       <AboutYangtzeSolarSection />
       <WhyYangtzeSolarSection />
+      <OurImpactSection />
+      <HelpSection />
     </div>
   )
 }
