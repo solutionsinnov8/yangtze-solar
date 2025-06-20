@@ -9,28 +9,24 @@ const videos = [
     heading: 'Powering the Future with Yangtze Solar',
     buttonText: 'Discover More',
     buttonLink: '/about/astronergy',
-    fallbackImage: '/images/fallback1.jpg',
   },
   {
     src: '/videos/second.mp4',
     heading: 'Sustainable Energy by Yangtze Solar',
     buttonText: 'Explore Our Services',
     buttonLink: '/services/module-authenticity',
-    fallbackImage: '/images/fallback2.jpg',
   },
   {
     src: '/videos/third.mp4',
     heading: 'Innovate with Yangtze Solar Technology',
     buttonText: 'Contact Us',
     buttonLink: '/contact',
-    fallbackImage: '/images/fallback3.jpg',
   },
   {
     src: '/videos/fourth.mp4',
     heading: 'Leading the Solar Revolution with Yangtze Solar',
     buttonText: 'Learn About Us',
     buttonLink: '/about/sustainability',
-    fallbackImage: '/images/fallback4.jpg',
   },
 ];
 
@@ -38,45 +34,47 @@ const HeroCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const videoRefs = useRef(videos.map(() => null));
 
-  // Handle video end to move to next slide
   const handleVideoEnd = () => {
-    goToNext();
+    setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
   };
 
-  // Go to previous slide
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? videos.length - 1 : prevIndex - 1));
+    setCurrentIndex((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
   };
 
-  // Go to next slide
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === videos.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
   };
 
-  // Play current video and pause others
   useEffect(() => {
     videoRefs.current.forEach((video, index) => {
       if (video) {
         if (index === currentIndex) {
-          console.log(`Playing video: ${videos[index].src}`);
-          video.play().catch((error) => console.error(`Video ${videos[index].src} play error:`, error));
+          if (video.readyState >= 2) {
+            video.play().catch((e) => console.error(`Video ${videos[index].src} play error:`, e));
+          } else {
+            video.addEventListener('canplay', () => {
+              if (index === currentIndex) {
+                video.play().catch((e) => console.error(`Video ${videos[index].src} play error:`, e));
+              }
+            }, { once: true });
+          }
         } else {
           video.pause();
           video.currentTime = 0;
         }
-      } else {
-        console.error(`Video ref for ${videos[index].src} is null`);
       }
     });
   }, [currentIndex]);
 
   return (
     <div className="relative w-full h-[calc(100vh-60px)] overflow-hidden font-noto-sans">
-      {/* Carousel Videos */}
       {videos.map((video, index) => (
         <div
           key={index}
-          className={`absolute inset-0 ${index === currentIndex ? 'block z-10' : 'hidden z-0'}`}
+          className={`absolute inset-0 transition-opacity duration-500 ${
+            index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          }`}
         >
           <video
             ref={(el) => (videoRefs.current[index] = el)}
@@ -85,19 +83,15 @@ const HeroCarousel = () => {
             loop={false}
             onEnded={handleVideoEnd}
             playsInline
-            preload="auto"
-            onError={(e) => console.error(`Error loading video ${video.src}:`, e)}
-            poster={video.fallbackImage}
+            preload={index === currentIndex || index === (currentIndex + 1) % videos.length ? 'auto' : 'none'}
+            onError={(e) => console.error(`Video ${video.src} error:`, e.target.error)}
           >
             <source src={video.src} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          {/* Overlay commented out to debug video visibility */}
-          {/* <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div> */}
         </div>
       ))}
 
-      {/* Content Overlay */}
       <div className="absolute inset-0 flex items-center justify-start px-4 sm:px-6 lg:px-8 z-20">
         <div className="max-w-[1440px] mx-auto w-full">
           <div className="text-white max-w-lg ml-10 sm:ml-12 lg:ml-14">
@@ -114,7 +108,6 @@ const HeroCarousel = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-gray-800 p-3 rounded-full focus:outline-none z-20"
