@@ -41,7 +41,7 @@ const ModuleAuthenticityPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-800 text-white flex items-center justify-center p-4">
+    <div className="min-h-[calc(100vh-60px)] bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-800 text-white flex items-center justify-center p-4">
       <div className="w-full max-w-6xl">
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-white/20">
           <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-purple-400 mb-6">

@@ -85,7 +85,7 @@ const Navbar = () => {
             <Link href="/contact" className="text-gray-700 hover:text-red-600 font-medium">
               Contact Us
             </Link>
-            <Link href="/search" className="text-gray-700 hover:text-red-600">
+            <Link href="/services/module-authenticity" className="text-gray-700 hover:text-red-600">
               <MdOutlineManageSearch className="text-2xl" />
             </Link>
           </div>
