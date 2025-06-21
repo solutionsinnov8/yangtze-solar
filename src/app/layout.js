@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Gaungxi Solar",
-  description: "Gaungxi Solar provides reliable and affordable solar energy solutions, including solar panel installation, maintenance, and consultation services for homes and businesses.",
+  title: "Guangxi solar",
+  description: "Guangxi Solar, green energy solution provider",
 };
 
 export default function RootLayout({ children }) {
