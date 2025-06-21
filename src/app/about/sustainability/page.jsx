@@ -8,7 +8,7 @@ const page = () => {
     <div className='mt-[60px]'>
       <div
         className="w-full h-96 bg-cover bg-center relative "
-        style={{ backgroundImage: "url('/images/about/img2.jpg')", opacity: "0.6" }}
+        style={{ backgroundImage: "url('/images/about/img12.webp')", opacity: "0.6" }}
 
       >
         <div className="absolute inset-0 flex items-center justify-center ">

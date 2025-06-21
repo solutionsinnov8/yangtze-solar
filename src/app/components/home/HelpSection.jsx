@@ -6,7 +6,7 @@ const HelpSection = () => {
     <div
       className="w-full py-12 sm:py-10 lg:py-16"
       style={{
-        background: "url('/images/home/img2.jpg') no-repeat center/cover !important, rgba(0,0,0, 0.9)",
+        background: "url('/images/home/img2.jpg') no-repeat center/cover !important",
       }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-white">
