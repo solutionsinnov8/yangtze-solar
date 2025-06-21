@@ -9,21 +9,21 @@ const videos = [
     heading: 'Powering the Future with Guangxi Solar',
     buttonText: 'Discover More',
     buttonLink: '/about/guangxi-solar',
-    fallbackImage: '/images/fallback1.jpg',
+    fallbackImage: '/images/home/img12.jpg',
   },
   {
     src: '/videos/second.mp4',
     heading: 'Sustainable Energy by Guangxi Solar',
     buttonText: 'Explore Our Services',
     buttonLink: '/services/module-authenticity',
-    fallbackImage: '/images/fallback2.jpg',
+    fallbackImage: '/images/home/img13.jpg',
   },
   {
     src: '/videos/third.mp4',
     heading: 'Innovate with Guangxi Solar Technology',
     buttonText: 'Contact Us',
     buttonLink: '/contact',
-    fallbackImage: '/images/fallback3.jpg',
+    fallbackImage: '/images/home/img14.jpg',
   },
 ];
 
