@@ -135,9 +135,9 @@ const ContactUs = () => {
               <FaEnvelope className="text-[#18AD5E] text-2xl mr-4 mt-1" />
               <div>
                 <h4 className="text-lg font-semibold text-gray-800">Email</h4>
-                <p className="text-gray-600">sales@Guangxisolar.com</p>
-                <p className="text-gray-600">support@Guangxisolar.com</p>
-                <p className="text-gray-600">hr@Guangxisolar.com</p>
+                <p className="text-gray-600">sales@guangxisolar.com</p>
+                <p className="text-gray-600">support@guangxisolar.com</p>
+                <p className="text-gray-600">hr@guangxisolar.com</p>
               </div>
             </div>
             <div className="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300">
