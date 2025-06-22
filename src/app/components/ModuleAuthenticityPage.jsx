@@ -14,7 +14,7 @@ const staticData = {
   maximumCurrent: "13.26",
   openCircuitVoltage: "50.32",
   fillFactor: "0.80",
-  model: "CHSM72M(DG)/F-BH-E006",
+  model: "GSCL50A(DG)/BF-550",
   warranty: "25 years"
 };
 
