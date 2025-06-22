@@ -130,7 +130,7 @@ const ContactUs = () => {
         {/* New Contact Information Section */}
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">Get in Touch</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
             <div className="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300">
               <FaEnvelope className="text-[#18AD5E] text-2xl mr-4 mt-1" />
               <div>
@@ -140,13 +140,13 @@ const ContactUs = () => {
                 <p className="text-gray-600">hr@guangxisolar.com</p>
               </div>
             </div>
-            <div className="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300">
+            {/* <div className="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300">
               <FaPhoneAlt className="text-[#18AD5E] text-2xl mr-4 mt-1" />
               <div>
                 <h4 className="text-lg font-semibold text-gray-800">Phone</h4>
                 <p className="text-gray-600">+1 (800) 123-4567</p>
               </div>
-            </div>
+            </div> */}
             <div className="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300">
               <FaMapMarkerAlt className="text-[#18AD5E] text-2xl mr-4 mt-1" />
               <div>

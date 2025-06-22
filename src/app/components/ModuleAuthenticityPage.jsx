@@ -15,6 +15,7 @@ const staticData = {
   openCircuitVoltage: "50.32",
   fillFactor: "0.80",
   model: "CHSM72M(DG)/F-BH-E006",
+  warranty: "25 years"
 };
 
 const ModuleAuthenticityPage = () => {
@@ -94,7 +95,7 @@ const ModuleAuthenticityPage = () => {
                   <p><span className="font-medium text-white">Serial Number:</span> {searchedSerialNumber}</p> {/* Use searchedSerialNumber */}
                   <p><span className="font-medium text-white">Time:</span> {result.time}</p>
                   <p><span className="font-medium text-white">Grade:</span> {result.grade}</p>
-                  <p><span className="font-medium text-white">Barcode:</span> {result.barcode}</p>
+                  <p><span className="font-medium text-white">Warranty:</span> {result.warranty}</p>
                   <p><span className="font-medium text-white">Max Power (W):</span> {result.maximumPower}</p>
                   <p><span className="font-medium text-white">Short Circuit (A):</span> {result.shortCircuitCurrent}</p>
                   <p><span className="font-medium text-white">Max Current (A):</span> {result.maximumCurrent}</p>
